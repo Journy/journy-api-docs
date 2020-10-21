@@ -1294,5 +1294,350 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the itinerary to delete
 
+# LocationItems
+
+## Get All Itineraries
+
+```ruby
+require 'Journy'
+
+api = Journy::APIClient.authorize!('meowmeowmeow')
+api.itineraries.get
+```
+
+```python
+import Journy
+
+api = Journy.authorize('meowmeowmeow')
+api.itineraries.get()
+```
+
+```shell
+curl "http://staging.gojourny.com/api/itineraries"
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const Journy = require('Journy');
+
+let api = Journy.authorize('meowmeowmeow');
+let itineraries = api.itineraries.get();
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "breed": "unknown",
+    "fluffiness": 5,
+    "cuteness": 10
+  }
+]
+```
+
+This endpoint retrieves all itineraries.
+
+### HTTP Request
+
+`GET http://staging.gojourny.com/api/v2/itineraries`
+
+### Query Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+include_cats | false | If set to true, the result will also include cats.
+available | true | If set to false, the result will include itineraries that have already been adopted.
+
+<aside class="success">
+Remember — a happy itinerary is an authenticated itinerary!
+</aside>
+
+## Get a Specific itinerary
+
+```ruby
+require 'Journy'
+
+api = Journy::APIClient.authorize!('meowmeowmeow')
+api.itineraries.get(2)
+```
+
+```python
+import Journy
+
+api = Journy.authorize('meowmeowmeow')
+api.itineraries.get(2)
+```
+
+```shell
+curl "http://staging.gojourny.com/api/itineraries/2"
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const Journy = require('Journy');
+
+let api = Journy.authorize('meowmeowmeow');
+let max = api.itineraries.get(2);
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "id": 2,
+  "name": "Max",
+  "breed": "unknown",
+  "fluffiness": 5,
+  "cuteness": 10
+}
+```
+
+This endpoint retrieves a specific itinerary.
+
+<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+
+### HTTP Request
+
+`GET http://staging.gojourny.com/itineraries/<ID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the itinerary to retrieve
+
+## Delete a Specific itinerary
+
+```ruby
+require 'Journy'
+
+api = Journy::APIClient.authorize!('meowmeowmeow')
+api.itineraries.delete(2)
+```
+
+```python
+import Journy
+
+api = Journy.authorize('meowmeowmeow')
+api.itineraries.delete(2)
+```
+
+```shell
+curl "http://staging.gojourny.com/api/itineraries/2"
+  -X DELETE
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const Journy = require('Journy');
+
+let api = Journy.authorize('meowmeowmeow');
+let max = api.itineraries.delete(2);
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "id": 2,
+  "deleted" : ":("
+}
+```
+
+This endpoint deletes a specific itinerary.
+
+### HTTP Request
+
+`DELETE http://staging.gojourny.com/itineraries/<ID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the itinerary to delete
+
+
+# DayItems
+
+## Get All Itineraries
+
+```ruby
+require 'Journy'
+
+api = Journy::APIClient.authorize!('meowmeowmeow')
+api.itineraries.get
+```
+
+```python
+import Journy
+
+api = Journy.authorize('meowmeowmeow')
+api.itineraries.get()
+```
+
+```shell
+curl "http://staging.gojourny.com/api/itineraries"
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const Journy = require('Journy');
+
+let api = Journy.authorize('meowmeowmeow');
+let itineraries = api.itineraries.get();
+```
+
+> The above command returns JSON structured like this:
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Fluffums",
+    "breed": "calico",
+    "fluffiness": 6,
+    "cuteness": 7
+  },
+  {
+    "id": 2,
+    "name": "Max",
+    "breed": "unknown",
+    "fluffiness": 5,
+    "cuteness": 10
+  }
+]
+```
+
+This endpoint retrieves all itineraries.
+
+### HTTP Request
+
+`GET http://staging.gojourny.com/api/v2/itineraries`
+
+### Query Parameters
+
+Parameter | Default | Description
+--------- | ------- | -----------
+include_cats | false | If set to true, the result will also include cats.
+available | true | If set to false, the result will include itineraries that have already been adopted.
+
+<aside class="success">
+Remember — a happy itinerary is an authenticated itinerary!
+</aside>
+
+## Get a Specific itinerary
+
+```ruby
+require 'Journy'
+
+api = Journy::APIClient.authorize!('meowmeowmeow')
+api.itineraries.get(2)
+```
+
+```python
+import Journy
+
+api = Journy.authorize('meowmeowmeow')
+api.itineraries.get(2)
+```
+
+```shell
+curl "http://staging.gojourny.com/api/itineraries/2"
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const Journy = require('Journy');
+
+let api = Journy.authorize('meowmeowmeow');
+let max = api.itineraries.get(2);
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "id": 2,
+  "name": "Max",
+  "breed": "unknown",
+  "fluffiness": 5,
+  "cuteness": 10
+}
+```
+
+This endpoint retrieves a specific itinerary.
+
+<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+
+### HTTP Request
+
+`GET http://staging.gojourny.com/itineraries/<ID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the itinerary to retrieve
+
+## Delete a Specific itinerary
+
+```ruby
+require 'Journy'
+
+api = Journy::APIClient.authorize!('meowmeowmeow')
+api.itineraries.delete(2)
+```
+
+```python
+import Journy
+
+api = Journy.authorize('meowmeowmeow')
+api.itineraries.delete(2)
+```
+
+```shell
+curl "http://staging.gojourny.com/api/itineraries/2"
+  -X DELETE
+  -H "Authorization: meowmeowmeow"
+```
+
+```javascript
+const Journy = require('Journy');
+
+let api = Journy.authorize('meowmeowmeow');
+let max = api.itineraries.delete(2);
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "id": 2,
+  "deleted" : ":("
+}
+```
+
+This endpoint deletes a specific itinerary.
+
+### HTTP Request
+
+`DELETE http://staging.gojourny.com/itineraries/<ID>`
+
+### URL Parameters
+
+Parameter | Description
+--------- | -----------
+ID | The ID of the itinerary to delete
+
 # Locations
 
