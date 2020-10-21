@@ -96,11 +96,6 @@ GEM
     redcarpet (3.5.0)
     rexml (3.2.4)
     rouge (3.20.0)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.4.0)
       ffi (~> 1.9)
     servolux (0.13.0)
@@ -127,10 +122,10 @@ DEPENDENCIES
   nokogiri (~> 1.10.8)
   redcarpet (~> 3.5.0)
   rouge (~> 3.20)
-  sass
+  sassc
 
 RUBY VERSION
-   ruby 2.7.0p0
+   ruby 2.7.2p137
 
 BUNDLED WITH
    2.1.4
