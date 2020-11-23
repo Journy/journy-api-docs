@@ -85,7 +85,15 @@ start_date_from | | Date, limits return to itineraries starting after date
 start_date_to | | Date, limits return to itineraries starting before date
 end_date_from | | Date, limits return to itineraries ending after date
 end_date_to | | Date, limits return to itineraries starting before date
-status | | Array, limits return to itineries with matching statuses
+status | | String Array, limits return to itineries with matching statuses, status are: pending, followed, hotels_sent, hotels_confirmed, ready, followed_pretrip, nps_survey_sent, cancelled, package_quote
+travel_type | | Integer, 0 for chronological, 1 for flexible
+assignee_id | | Integer, Trip designer id
+payment_status | | String Array 'paid' and 'unpaid'
+destination_id | | Integer, destination id
+device_source | | String, Options are: Manual, Web, IOS, Mobile, Multi-purchase-master, multi-purchase, Experience-Master, Experience, Package
+created_at | | Date, Specifies the 'creation after' filter
+customer_email | | String, The customer email
+tags | | String, Tag ids
 
 <aside class="success">
 Remember — all requests need to carry the authentication token!
