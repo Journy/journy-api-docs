@@ -27,7 +27,6 @@ ITINERARY_ID | The itinerary id
       "tax": "1000.0",
       "status": "pending",
       "note": "Example note",
-      "people_count": 2,
       "start_date": "2022-01-15",
       "end_date": "2022-01-23",
       "booking_items": [],
@@ -59,12 +58,8 @@ BOOKING_ID | The booking id
     "bookable_id": "c3f12ef1-4e51-4d67-a6db-ec7bad5df445",
     "bookable_type": "Hotel",
     "itinerary_id": "NYLL",
-    "net_price": "50000.0",
-    "commission": "5.0",
-    "tax": "1000.0",
     "status": "pending",
     "note": "Example note",
-    "people_count": 2,
     "start_date": "2022-01-15",
     "end_date": "2022-01-23",
     "booking_items": [],
@@ -92,12 +87,13 @@ Parameter | Description
 ----------|-------------
 booking['bookable_id'] | The bookable id (hotel id or room id)
 booking['bookable_type'] | The bookable type (The class, like: Hotel or Room)
-booking['net_price'] | The net price in cents
-booking['tax'] | The tax as single value in cents
-booking['commission'] | The comission as %
+booking['trip_section_id'] | The trip section id
+booking['day_item_id'] | The day item id
+booking['itinerary_item_id'] | The location item or accommodation item id
+booking['booker_id'] | The trip designer o admin user who is managing the booking
+booking['amount_paid'] | The paid amount for the itinerary
 booking['status'] | The status
 booking['note'] | Any note
-booking['people_count'] | The "units" of the booking
 booking['start_date'] | Start date or check in date
 booking['end_date'] | End date or check out date
 
@@ -109,12 +105,8 @@ booking['end_date'] | End date or check out date
     "bookable_id": "c3f12ef1-4e51-4d67-a6db-ec7bad5df445",
     "bookable_type": "Hotel",
     "itinerary_id": "NYLL",
-    "net_price": "50000.0",
-    "commission": "5.0",
-    "tax": "1000.0",
     "status": "pending",
     "note": "Example note",
-    "people_count": 2,
     "start_date": "2022-01-15",
     "end_date": "2022-01-23",
     "booking_items": [],
@@ -143,12 +135,13 @@ Parameter | Description
 ----------|-------------
 booking['bookable_id'] | The bookable id (hotel id or room id)
 booking['bookable_type'] | The bookable type (The class, like: Hotel or Room)
-booking['net_price'] | The net price in cents
-booking['tax'] | The tax as single value in cents
-booking['commission'] | The comission as %
+booking['trip_section_id'] | The trip section id
+booking['day_item_id'] | The day item id
+booking['itinerary_item_id'] | The location item or accommodation item id
+booking['booker_id'] | The trip designer o admin user who is managing the booking
+booking['amount_paid'] | The paid amount for the itinerary
 booking['status'] | The status
 booking['note'] | Any note
-booking['people_count'] | The "units" of the booking
 booking['start_date'] | Start date or check in date
 booking['end_date'] | End date or check out date
 
@@ -160,12 +153,8 @@ booking['end_date'] | End date or check out date
     "bookable_id": "c3f12ef1-4e51-4d67-a6db-ec7bad5df445",
     "bookable_type": "Hotel",
     "itinerary_id": "NYLL",
-    "net_price": "50000.0",
-    "commission": "5.0",
-    "tax": "1000.0",
     "status": "pending",
     "note": "Example note",
-    "people_count": 2,
     "start_date": "2022-01-15",
     "end_date": "2022-01-23",
     "booking_items": [],
@@ -193,12 +182,8 @@ BOOKING_ID | The booking id
     "bookable_id": "c3f12ef1-4e51-4d67-a6db-ec7bad5df445",
     "bookable_type": "Hotel",
     "itinerary_id": "NYLL",
-    "net_price": "50000.0",
-    "commission": "5.0",
-    "tax": "1000.0",
     "status": "pending",
     "note": "Example note",
-    "people_count": 2,
     "start_date": "2022-01-15",
     "end_date": "2022-01-23",
     "booking_items": [],
