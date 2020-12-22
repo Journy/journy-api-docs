@@ -32,7 +32,7 @@ We have language examples in Shell, Ruby, Python, and JavaScript! You can view c
 ```ruby
 require 'net/http'
 
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries")
+uri     = URI("https://staging.gojourny.com/api/v3/itineraries")
 headers = {
     'Authorization'=>'Bearer exampleJournyToken',
     'Content-Type' =>'application/json',
@@ -47,7 +47,7 @@ response = http.request(request)
 ```python
 import requests
 
-url     = "https://staging.gojourny.com/api/v2/itineraries"
+url     = "https://staging.gojourny.com/api/v3/itineraries"
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -59,12 +59,12 @@ response = requests.get(url, headers=headers)
 
 ```shell
 # With shell, you can just pass the correct header with each request
-curl "https://staging.gojourny.com/api/v2/itineraries" \
+curl "https://staging.gojourny.com/api/v3/itineraries" \
   -H "Authorization: Bearer exampleJournyToken"
 ```
 
 ```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries"
+const url     = "https://staging.gojourny.com/api/v3/itineraries"
 const headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -97,7 +97,7 @@ You must replace <code>exampleJournyToken</code> with your personal API key.
 ```ruby
 require 'net/http'
 
-uri     = URI("https://staging.gojourny.com/api/v2/countries")
+uri     = URI("https://staging.gojourny.com/api/v3/countries")
 headers = {
     'Authorization'=>'Bearer exampleJournyToken',
     'Content-Type' =>'application/json',
@@ -112,7 +112,7 @@ response = http.request(request)
 ```python
 import requests
 
-url     = "https://staging.gojourny.com/api/v2/countries"
+url     = "https://staging.gojourny.com/api/v3/countries"
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -124,12 +124,12 @@ response = requests.get(url, headers=headers)
 
 ```shell
 # With shell, you can just pass the correct header with each request
-curl "https://staging.gojourny.com/api/v2/countries"
+curl "https://staging.gojourny.com/api/v3/countries"
   -H "Authorization: Bearer exampleJournyToken"
 ```
 
 ```javascript
-const url     = "https://staging.gojourny.com/api/v2/countries"
+const url     = "https://staging.gojourny.com/api/v3/countries"
 const headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -163,7 +163,7 @@ This endpoint retrieves all itineraries for your entity.
 
 ### HTTP Request
 
-`GET https://staging.gojourny.com/api/v2/countries`
+`GET https://staging.gojourny.com/api/v3/countries`
 
 ### Query Parameters
 
@@ -181,7 +181,7 @@ Remember — all requests need to carry the authentication token!
 ```ruby
 require 'net/http'
 
-uri     = URI("https://staging.gojourny.com/api/v2/countries/14")
+uri     = URI("https://staging.gojourny.com/api/v3/countries/14")
 headers = {
     'Authorization'=>'Bearer exampleJournyToken',
     'Content-Type' =>'application/json',
@@ -196,7 +196,7 @@ response = http.request(request)
 ```python
 import requests
 
-url     = "https://staging.gojourny.com/api/v2/countries/14"
+url     = "https://staging.gojourny.com/api/v3/countries/14"
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -208,12 +208,12 @@ response = requests.get(url, headers=headers)
 
 ```shell
 # With shell, you can just pass the correct header with each request
-curl "https://staging.gojourny.com/api/v2/countries/14"
+curl "https://staging.gojourny.com/api/v3/countries/14"
   -H "Authorization: Bearer exampleJournyToken"
 ```
 
 ```javascript
-const url     = "https://staging.gojourny.com/api/v2/countries/14"
+const url     = "https://staging.gojourny.com/api/v3/countries/14"
 const headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -244,7 +244,7 @@ This endpoint retrieves a specific itinerary.
 
 ### HTTP Request
 
-`GET http://staging.gojourny.com/api/v2/countries/<ID>`
+`GET http://staging.gojourny.com/api/v3/countries/<ID>`
 
 ### URL Parameters
 
@@ -259,7 +259,7 @@ ID | The ID of the itinerary to retrieve
 ```ruby
 require 'net/http'
 
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries")
+uri     = URI("https://staging.gojourny.com/api/v3/itineraries")
 headers = {
     'Authorization'=>'Bearer exampleJournyToken',
     'Content-Type' =>'application/json',
@@ -274,7 +274,7 @@ response = http.request(request)
 ```python
 import requests
 
-url     = "https://staging.gojourny.com/api/v2/itineraries"
+url     = "https://staging.gojourny.com/api/v3/itineraries"
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -286,12 +286,12 @@ response = requests.get(url, headers=headers)
 
 ```shell
 # With shell, you can just pass the correct header with each request
-curl "https://staging.gojourny.com/api/v2/itineraries"
+curl "https://staging.gojourny.com/api/v3/itineraries"
   -H "Authorization: Bearer exampleJournyToken"
 ```
 
 ```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries"
+const url     = "https://staging.gojourny.com/api/v3/itineraries"
 const headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -323,7 +323,7 @@ This endpoint retrieves all itineraries for your entity.
 
 ### HTTP Request
 
-`GET https://staging.gojourny.com/api/v2/itineraries`
+`GET https://staging.gojourny.com/api/v3/itineraries`
 
 ### Query Parameters
 
@@ -349,7 +349,7 @@ Remember — all requests need to carry the authentication token!
 ```ruby
 require 'net/http'
 
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries/15700")
+uri     = URI("https://staging.gojourny.com/api/v3/itineraries/15700")
 headers = {
     'Authorization'=>'Bearer exampleJournyToken',
     'Content-Type' =>'application/json',
@@ -364,7 +364,7 @@ response = http.request(request)
 ```python
 import requests
 
-url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
+url     = "https://staging.gojourny.com/api/v3/itineraries/15700"
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -376,12 +376,12 @@ response = requests.get(url, headers=headers)
 
 ```shell
 # With shell, you can just pass the correct header with each request
-curl "https://staging.gojourny.com/api/v2/itineraries/15700"
+curl "https://staging.gojourny.com/api/v3/itineraries/15700"
   -H "Authorization: Bearer exampleJournyToken"
 ```
 
 ```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
+const url     = "https://staging.gojourny.com/api/v3/itineraries/15700"
 const headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -442,7 +442,7 @@ This endpoint retrieves a specific itinerary.
 
 ### HTTP Request
 
-`GET http://staging.gojourny.com/api/v2/itineraries/<ID>`
+`GET http://staging.gojourny.com/api/v3/itineraries/<ID>`
 
 ### URL Parameters
 
@@ -455,7 +455,7 @@ ID | The ID of the itinerary to retrieve
 ```ruby
 require 'net/http'
 
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries/15700")
+uri     = URI("https://staging.gojourny.com/api/v3/itineraries/15700")
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -473,7 +473,7 @@ response = http.request(request)
 ```python
 import requests
 
-url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
+url     = "https://staging.gojourny.com/api/v3/itineraries/15700"
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -492,11 +492,11 @@ curl -X PUT \
      -H "Content-Type: application/json" \
      -H "Authorization: Bearer exampleJournyToken" \
      -d '{"title":"New shell title"}' \
-     "https://staging.gojourny.com/api/v2/itineraries/15700"
+     "https://staging.gojourny.com/api/v3/itineraries/15700"
 ```
 
 ```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
+const url     = "https://staging.gojourny.com/api/v3/itineraries/15700"
 const headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -563,8 +563,8 @@ This endpoint retrieves a specific itinerary.
 
 ### HTTP Request
 
-`PATCH http://staging.gojourny.com/api/v2/itineraries/<ID>`
-`PUT http://staging.gojourny.com/api/v2/itineraries/<ID>`
+`PATCH http://staging.gojourny.com/api/v3/itineraries/<ID>`
+`PUT http://staging.gojourny.com/api/v3/itineraries/<ID>`
 
 ### URL Parameters
 
@@ -578,7 +578,7 @@ ID | The ID of the itinerary to retrieve
 ```ruby
 require 'net/http'
 
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries/15700")
+uri     = URI("https://staging.gojourny.com/api/v3/itineraries/15700")
 headers = {
     'Authorization'=>'Bearer exampleJournyToken',
     'Content-Type' =>'application/json',
@@ -593,7 +593,7 @@ response = http.request(request)
 ```python
 import requests
 
-url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
+url     = "https://staging.gojourny.com/api/v3/itineraries/15700"
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -605,12 +605,12 @@ response = requests.delete(url, headers=headers)
 
 ```shell
 # With shell, you can just pass the correct header with each request
-curl -X DELETE "https://staging.gojourny.com/api/v2/itineraries" \
+curl -X DELETE "https://staging.gojourny.com/api/v3/itineraries" \
   -H "Authorization: Bearer exampleJournyToken"
 ```
 
 ```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
+const url     = "https://staging.gojourny.com/api/v3/itineraries/15700"
 const headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -637,7 +637,7 @@ This endpoint deletes a specific itinerary.
 
 ### HTTP Request
 
-`DELETE http://staging.gojourny.com/api/v2/itineraries/<ID>`
+`DELETE http://staging.gojourny.com/api/v3/itineraries/<ID>`
 
 ### URL Parameters
 
@@ -653,7 +653,7 @@ ID | The ID of the itinerary to delete
 ```ruby
 require 'net/http'
 
-uri     = URI("https://staging.gojourny.com/api/v2/destination_regions")
+uri     = URI("https://staging.gojourny.com/api/v3/destination_regions")
 headers = {
     'Authorization'=>'Bearer exampleJournyToken',
     'Content-Type' =>'application/json',
@@ -668,7 +668,7 @@ response = http.request(request)
 ```python
 import requests
 
-url     = "https://staging.gojourny.com/api/v2/destination_regions"
+url     = "https://staging.gojourny.com/api/v3/destination_regions"
 headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -680,12 +680,12 @@ response = requests.get(url, headers=headers)
 
 ```shell
 # With shell, you can just pass the correct header with each request
-curl "https://staging.gojourny.com/api/v2/destination_regions"
+curl "https://staging.gojourny.com/api/v3/destination_regions"
   -H "Authorization: Bearer exampleJournyToken"
 ```
 
 ```javascript
-const url     = "https://staging.gojourny.com/api/v2/destination_regions"
+const url     = "https://staging.gojourny.com/api/v3/destination_regions"
 const headers = {
     'Authorization': 'Bearer exampleJournyToken',
     'Content-Type': 'application/json',
@@ -716,7 +716,7 @@ This endpoint retrieves all destination regions for your entity.
 
 ### HTTP Request
 
-`GET https://staging.gojourny.com/api/v2/destination_regions`
+`GET https://staging.gojourny.com/api/v3/destination_regions`
 
 ### Query Parameters
 
@@ -729,398 +729,24 @@ page_size | 25 | Integer, used to set array return size
 Remember — all requests need to carry the authentication token!
 </aside>
 
-# Itineraries
 
-## Get All Itineraries
-
-```ruby
-require 'net/http'
-
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries")
-headers = {
-    'Authorization'=>'Bearer exampleJournyToken',
-    'Content-Type' =>'application/json',
-    'Accept'=>'application/json'
-}
-
-http     = Net::HTTP.new(uri.host, uri.port)
-request  = Net::HTTP::Get.new(uri.request_uri, headers)
-response = http.request(request)
-```
-
-```python
-import requests
-
-url     = "https://staging.gojourny.com/api/v2/itineraries"
-headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-
-response = requests.get(url, headers=headers)
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "https://staging.gojourny.com/api/v2/itineraries"
-  -H "Authorization: Bearer exampleJournyToken"
-```
-
-```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries"
-const headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-const response = await fetch(url, {
-    method: 'GET',
-    headers: headers
-})
-
-return response.json();
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "itineraries": [
-    {
-      "id": 16397,
-      "title": "Paris for Anon Strudlebauer",
-      "display": "Paris for Anon Strudlebauer ( 16397 )"
-    }
-  ]
-}
-```
-
-This endpoint retrieves all itineraries for your entity.
-
-### HTTP Request
-
-`GET https://staging.gojourny.com/api/v2/itineraries`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-page | 1 | Integer, used in combination with page_size
-page_size | 50 | Integer, used to set array return size
-sort_field | 'created_at' | String, which field to sort on
-sort_order | 'desc' | 'desc' or 'asc'
-title | | String, limits return to itineraries matching string in title
-start_date_from | | Date, limits return to itineraries starting after date
-start_date_to | | Date, limits return to itineraries starting before date
-end_date_from | | Date, limits return to itineraries ending after date
-end_date_to | | Date, limits return to itineraries starting before date
-status | | Array, limits return to itineries with matching statuses
-
-<aside class="success">
-Remember — all requests need to carry the authentication token!
-</aside>
-
-## Get a Specific Itinerary
-
-```ruby
-require 'net/http'
-
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries/15700")
-headers = {
-    'Authorization'=>'Bearer exampleJournyToken',
-    'Content-Type' =>'application/json',
-    'Accept'=>'application/json'
-}
-
-http     = Net::HTTP.new(uri.host, uri.port)
-request  = Net::HTTP::Get.new(uri.request_uri, headers)
-response = http.request(request)
-```
-
-```python
-import requests
-
-url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
-headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-
-response = requests.get(url, headers=headers)
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl "https://staging.gojourny.com/api/v2/itineraries/15700"
-  -H "Authorization: Bearer exampleJournyToken"
-```
-
-```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
-const headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-const response = await fetch(url, {
-    method: 'GET',
-    headers: headers
-})
-
-return response.json();
-````
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 15700,
-  "title": "Japan for Larry",
-  "user_id": 27215,
-  "created_at": "2019-11-25T01:40:38.737Z",
-  "updated_at": "2020-04-15T08:04:09.829Z",
-  "request": {},
-  "status": "nps_survey_sent",
-  "assignee_id": 22295,
-  "notes": "",
-  "blockers": [],
-  "travel_type": "chronological",
-  "promotion_id": 1080,
-  "sample": false,
-  "opened_by_id": 6223,
-  "opened_at": "2020-03-15T02:06:09.615Z",
-  "multi_purchase": false,
-  "checkout_description": null,
-  "special_terms": null,
-  "include_upsell": true,
-  "purchase_price": null,
-  "sequence_number": 0,
-  "parent_id": null,
-  "experience": false,
-  "max_available": null,
-  "total_purchase_count": 0,
-  "total_people": 0,
-  "travel_plan_id": null,
-  "customer_request": false,
-  "package_type": "Full",
-  "package_change_type": "",
-  "package_change_notes": "",
-  "added_other_info": false,
-  "itinerary_notes": "architecture, botanical gardens, boutique/artisan shops, not much alcohol and no red meat. ",
-  "summary": "",
-  "app_title": "",
-  "payment_status": "paid",
-  "package_id": null
-}
-```
-
-This endpoint retrieves a specific itinerary.
-
-### HTTP Request
-
-`GET http://staging.gojourny.com/api/v2/itineraries/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the itinerary to retrieve
-
-## Update a Specific Itinerary
-
-```ruby
-require 'net/http'
-
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries/15700")
-headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-body = {
-  title: 'This is a new title',
-}
-
-http     = Net::HTTP.new(uri.host, uri.port)
-request  = Net::HTTP::Put.new(uri.request_uri, body, headers)
-response = http.request(request)
-```
-
-```python
-import requests
-
-url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
-headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-body = {
-  "title": 'This is a new title',
-}
-
-response = requests.put(url, data=json.dumps(payload), headers=headers)
-```
-
-```shell
-# With shell, you have to pass the correct header with each request
-curl -X PUT \
-     -H "Content-Type: application/json" \
-     -H "Authorization: Bearer exampleJournyToken" \
-     -d '{"title":"New shell title"}' \
-     "https://staging.gojourny.com/api/v2/itineraries/15700"
-```
-
-```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
-const headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-
-const data = {
-  title: 'This is a new title',
-}
-
-const response = await fetch(url, {
-    method: 'PUT',
-    headers: headers,
-    body: JSON.stringify(data)
-})
-
-return response.json();
-````
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 15700,
-  "title": "This is a new title",
-  "user_id": 27215,
-  "created_at": "2019-11-25T01:40:38.737Z",
-  "updated_at": "2020-04-15T08:04:09.829Z",
-  "request": {},
-  "status": "nps_survey_sent",
-  "assignee_id": 22295,
-  "notes": "",
-  "blockers": [],
-  "travel_type": "chronological",
-  "promotion_id": 1080,
-  "sample": false,
-  "opened_by_id": 6223,
-  "opened_at": "2020-03-15T02:06:09.615Z",
-  "multi_purchase": false,
-  "checkout_description": null,
-  "special_terms": null,
-  "include_upsell": true,
-  "purchase_price": null,
-  "sequence_number": 0,
-  "parent_id": null,
-  "experience": false,
-  "max_available": null,
-  "total_purchase_count": 0,
-  "total_people": 0,
-  "travel_plan_id": null,
-  "customer_request": false,
-  "package_type": "Full",
-  "package_change_type": "",
-  "package_change_notes": "",
-  "added_other_info": false,
-  "itinerary_notes": "architecture, botanical gardens, boutique/artisan shops, not much alcohol and no red meat. ",
-  "summary": "",
-  "app_title": "",
-  "payment_status": "paid",
-  "package_id": null
-}
-```
-
-This endpoint retrieves a specific itinerary.
-
-### HTTP Request
-
-`PATCH http://staging.gojourny.com/api/v2/itineraries/<ID>`
-`PUT http://staging.gojourny.com/api/v2/itineraries/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the itinerary to retrieve
-
-
-## Delete a Specific itinerary
-
-```ruby
-require 'net/http'
-
-uri     = URI("https://staging.gojourny.com/api/v2/itineraries/15700")
-headers = {
-    'Authorization'=>'Bearer exampleJournyToken',
-    'Content-Type' =>'application/json',
-    'Accept'=>'application/json'
-}
-
-http     = Net::HTTP.new(uri.host, uri.port)
-request  = Net::HTTP::Delete.new(uri.request_uri, headers)
-response = http.request(request)
-```
-
-```python
-import requests
-
-url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
-headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-
-response = requests.delete(url, headers=headers)
-```
-
-```shell
-# With shell, you can just pass the correct header with each request
-curl -X DELETE "https://staging.gojourny.com/api/v2/itineraries" \
-  -H "Authorization: Bearer exampleJournyToken"
-```
-
-```javascript
-const url     = "https://staging.gojourny.com/api/v2/itineraries/15700"
-const headers = {
-    'Authorization': 'Bearer exampleJournyToken',
-    'Content-Type': 'application/json',
-    'Accept': 'application/json'
-}
-const response = await fetch(url, {
-    method: 'DELETE',
-    headers: headers
-})
-
-return response.json();
-````
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "status" : "deleted"
-}
-```
-
-This endpoint deletes a specific itinerary.
-
-### HTTP Request
-
-`DELETE http://staging.gojourny.com/api/v2/itineraries/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the itinerary to delete
+<%= partial "partials/itineraries.html.md" %>
+<%= partial "partials/trip_sections.html.md" %>
+<%= partial "partials/day_items.html.md" %>
+<%= partial "partials/additional_options_items.html.md" %>
+<%= partial "partials/location_items.html.md" %>
+<%= partial "partials/reservations.html.md" %>
+<%= partial "partials/hotels.html.md" %>
+<%= partial "partials/rooms.html.md" %>
+<%= partial "partials/beds.html.md" %>
+<%= partial "partials/amenities.html.md" %>
+<%= partial "partials/tours.html.md" %>
+<%= partial "partials/api_connections.html.md" %>
+
+<%= partial "partials/bookings.html.md" %>
+<%= partial "partials/booking_options.html.md" %>
+<%= partial "partials/booking_items.html.md" %>
+<%= partial "partials/booking_comments.html.md" %>
 
 # ItineraryItems
 
@@ -1129,26 +755,26 @@ ID | The ID of the itinerary to delete
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.get
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.get()
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let itineraries = api.itineraries.get();
 ```
 
@@ -1177,7 +803,7 @@ This endpoint retrieves all itineraries.
 
 ### HTTP Request
 
-`GET http://staging.gojourny.com/api/v2/itineraries`
+`GET http://staging.gojourny.com/api/v3/itineraries`
 
 ### Query Parameters
 
@@ -1195,26 +821,26 @@ Remember — a happy itinerary is an authenticated itinerary!
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.get(2)
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.get(2)
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries/2"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let max = api.itineraries.get(2);
 ```
 
@@ -1249,27 +875,27 @@ ID | The ID of the itinerary to retrieve
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.delete(2)
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.delete(2)
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries/2"
   -X DELETE
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let max = api.itineraries.delete(2);
 ```
 
@@ -1301,26 +927,26 @@ ID | The ID of the itinerary to delete
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.get
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.get()
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let itineraries = api.itineraries.get();
 ```
 
@@ -1349,7 +975,7 @@ This endpoint retrieves all itineraries.
 
 ### HTTP Request
 
-`GET http://staging.gojourny.com/api/v2/itineraries`
+`GET http://staging.gojourny.com/api/v3/itineraries`
 
 ### Query Parameters
 
@@ -1367,26 +993,26 @@ Remember — a happy itinerary is an authenticated itinerary!
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.get(2)
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.get(2)
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries/2"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let max = api.itineraries.get(2);
 ```
 
@@ -1421,27 +1047,27 @@ ID | The ID of the itinerary to retrieve
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.delete(2)
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.delete(2)
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries/2"
   -X DELETE
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let max = api.itineraries.delete(2);
 ```
 
@@ -1474,26 +1100,26 @@ ID | The ID of the itinerary to delete
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.get
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.get()
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let itineraries = api.itineraries.get();
 ```
 
@@ -1522,7 +1148,7 @@ This endpoint retrieves all itineraries.
 
 ### HTTP Request
 
-`GET http://staging.gojourny.com/api/v2/itineraries`
+`GET http://staging.gojourny.com/api/v3/itineraries`
 
 ### Query Parameters
 
@@ -1540,26 +1166,26 @@ Remember — a happy itinerary is an authenticated itinerary!
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.get(2)
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.get(2)
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries/2"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let max = api.itineraries.get(2);
 ```
 
@@ -1581,7 +1207,7 @@ This endpoint retrieves a specific itinerary.
 
 ### HTTP Request
 
-`GET http://staging.gojourny.com/itineraries/<ID>`
+`DELETE http://staging.gojourny.com/itineraries/<ID>`
 
 ### URL Parameters
 
@@ -1594,27 +1220,27 @@ ID | The ID of the itinerary to retrieve
 ```ruby
 require 'Journy'
 
-api = Journy::APIClient.authorize!('meowmeowmeow')
+api = Journy::APIClient.authorize!('secret-token')
 api.itineraries.delete(2)
 ```
 
 ```python
 import Journy
 
-api = Journy.authorize('meowmeowmeow')
+api = Journy.authorize('secret-token')
 api.itineraries.delete(2)
 ```
 
 ```shell
 curl "http://staging.gojourny.com/api/itineraries/2"
   -X DELETE
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: secret-token"
 ```
 
 ```javascript
 const Journy = require('Journy');
 
-let api = Journy.authorize('meowmeowmeow');
+let api = Journy.authorize('secret-token');
 let max = api.itineraries.delete(2);
 ```
 
@@ -1639,5 +1265,5 @@ Parameter | Description
 --------- | -----------
 ID | The ID of the itinerary to delete
 
-# Locations
+
 
